@@ -325,6 +325,82 @@ footer{
   .nav-cta{display:none}
   footer{flex-direction:column;gap:0.5rem;text-align:center}
 }
+
+/* ── GITHUB ICON ── */
+.nav-gh {
+  display:inline-flex;align-items:center;gap:6px;
+  padding:0 0.8rem;line-height:60px;
+  color:var(--ink3);text-decoration:none;transition:color 0.15s;
+}
+.nav-gh:hover{color:var(--ink)}
+.nav-gh svg{width:18px;height:18px;fill:currentColor;display:block}
+
+/* ── HERO EXTRA BUTTONS ── */
+.btn-gh {
+  font-size:0.84rem;font-weight:500;color:var(--ink2);
+  border:1px solid var(--border);padding:11px 20px;
+  border-radius:5px;text-decoration:none;transition:all 0.18s;
+  display:inline-flex;align-items:center;gap:7px;
+}
+.btn-gh svg{width:16px;height:16px;fill:currentColor;flex-shrink:0}
+.btn-gh:hover{border-color:var(--ink);color:var(--ink);background:#f4f6f8}
+.btn-dl {
+  font-size:0.84rem;font-weight:500;color:var(--teal);
+  border:1px solid #a8cdb8;padding:11px 20px;
+  border-radius:5px;text-decoration:none;transition:all 0.18s;
+  display:inline-flex;align-items:center;gap:7px;
+  background:var(--teallt);
+}
+.btn-dl svg{width:15px;height:15px;fill:currentColor;flex-shrink:0}
+.btn-dl:hover{background:#d4ecdf;border-color:var(--teal)}
+
+/* ── CORE STACK ICONS ── */
+.core-stack {
+  margin-bottom:2.5rem;
+  padding:1.8rem 2rem;
+  background:#fff;
+  border:1px solid var(--border);
+  border-radius:10px;
+}
+.core-stack-label {
+  font-size:0.68rem;font-weight:700;color:var(--ink4);
+  letter-spacing:0.13em;text-transform:uppercase;margin-bottom:1.1rem;
+}
+.core-icons {
+  display:flex;flex-wrap:wrap;gap:10px;align-items:center;
+}
+.ci {
+  display:flex;flex-direction:column;align-items:center;gap:5px;
+  cursor:default;
+}
+.ci img {
+  width:38px;height:38px;border-radius:8px;
+  transition:transform 0.15s;
+  box-shadow:0 1px 4px rgba(0,0,0,0.08);
+}
+.ci:hover img{transform:translateY(-3px);box-shadow:0 4px 12px rgba(0,0,0,0.14)}
+.ci span {
+  font-size:0.6rem;color:var(--ink4);
+  font-weight:500;letter-spacing:0.02em;
+  white-space:nowrap;
+}
+
+/* ── AWS BADGE ── */
+.aws-badge-wrap {
+  display:flex;align-items:center;gap:1.2rem;
+}
+.aws-badge-img {
+  width:70px;height:70px;
+  border-radius:8px;
+  border:1px solid var(--border);
+  padding:4px;background:#fff;
+  box-shadow:0 2px 8px rgba(0,0,0,0.07);
+  transition:transform 0.15s;
+  flex-shrink:0;
+}
+.aws-badge-img:hover{transform:scale(1.05)}
+.aws-badge-text{}
+
 </style>
 </head>
 <body>
@@ -340,6 +416,9 @@ footer{
       <li><a href="#credentials">Credentials</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
+    <li><a href="https://github.com/ajayp7tech" target="_blank" class="nav-gh" title="GitHub">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+    </a></li>
     <a href="mailto:ajayp.tech.777@gmail.com" class="nav-cta">Get in Touch</a>
   </div>
 </nav>
@@ -362,7 +441,14 @@ footer{
     </p>
     <div class="hero-btns">
       <a href="#experience" class="btn-p">View Experience</a>
-      <a href="mailto:ajayp.tech.777@gmail.com" class="btn-s">ajayp.tech.777@gmail.com</a>
+      <a href="https://ajayp7tech.github.io/resume.pdf" target="_blank" class="btn-dl">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 16l-5-5h3V4h4v7h3l-5 5zm-7 2h14v2H5v-2z"/></svg>
+        Download Resume
+      </a>
+      <a href="https://github.com/ajayp7tech" target="_blank" class="btn-gh">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+        GitHub
+      </a>
     </div>
     <div class="hero-numbers">
       <div>
@@ -411,6 +497,7 @@ footer{
         <div class="mrow"><span class="mlbl">Email</span><span class="mval"><a href="mailto:ajayp.tech.777@gmail.com">ajayp.tech.777@gmail.com</a></span></div>
         <div class="mrow"><span class="mlbl">Phone</span><span class="mval"><a href="tel:+18328045171">+1 832-804-5171</a></span></div>
         <div class="mrow"><span class="mlbl">LinkedIn</span><span class="mval"><a href="https://linkedin.com/in/ajayp7tech" target="_blank">linkedin.com/in/ajayp7tech</a></span></div>
+        <div class="mrow"><span class="mlbl">GitHub</span><span class="mval"><a href="https://github.com/ajayp7tech" target="_blank">github.com/ajayp7tech</a></span></div>
       </div>
     </div>
   </div>
@@ -420,6 +507,26 @@ footer{
 <section class="section" id="skills">
   <div class="inner">
     <div class="sec-hd"><span class="sec-n">02</span><h2>Skills</h2></div>
+    <div class="core-stack r">
+      <div class="core-stack-label">Core Technology Stack</div>
+      <div class="core-icons">
+        <div class="ci"><img src="https://skillicons.dev/icons?i=java&theme=light" alt="Java" title="Java"><span>Java</span></div>
+        <div class="ci"><img src="https://skillicons.dev/icons?i=spring&theme=light" alt="Spring Boot" title="Spring Boot"><span>Spring Boot</span></div>
+        <div class="ci"><img src="https://skillicons.dev/icons?i=kafka&theme=light" alt="Kafka" title="Apache Kafka"><span>Kafka</span></div>
+        <div class="ci"><img src="https://skillicons.dev/icons?i=aws&theme=light" alt="AWS" title="Amazon Web Services"><span>AWS</span></div>
+        <div class="ci"><img src="https://skillicons.dev/icons?i=docker&theme=light" alt="Docker" title="Docker"><span>Docker</span></div>
+        <div class="ci"><img src="https://skillicons.dev/icons?i=kubernetes&theme=light" alt="Kubernetes" title="Kubernetes"><span>Kubernetes</span></div>
+        <div class="ci"><img src="https://skillicons.dev/icons?i=postgres&theme=light" alt="PostgreSQL" title="PostgreSQL"><span>PostgreSQL</span></div>
+        <div class="ci"><img src="https://skillicons.dev/icons?i=mongodb&theme=light" alt="MongoDB" title="MongoDB"><span>MongoDB</span></div>
+        <div class="ci"><img src="https://skillicons.dev/icons?i=redis&theme=light" alt="Redis" title="Redis"><span>Redis</span></div>
+        <div class="ci"><img src="https://skillicons.dev/icons?i=terraform&theme=light" alt="Terraform" title="Terraform"><span>Terraform</span></div>
+        <div class="ci"><img src="https://skillicons.dev/icons?i=angular&theme=light" alt="Angular" title="Angular"><span>Angular</span></div>
+        <div class="ci"><img src="https://skillicons.dev/icons?i=react&theme=light" alt="React" title="React"><span>React</span></div>
+        <div class="ci"><img src="https://skillicons.dev/icons?i=python&theme=light" alt="Python" title="Python"><span>Python</span></div>
+        <div class="ci"><img src="https://skillicons.dev/icons?i=typescript&theme=light" alt="TypeScript" title="TypeScript"><span>TypeScript</span></div>
+        <div class="ci"><img src="https://skillicons.dev/icons?i=github&theme=light" alt="GitHub" title="GitHub Actions"><span>GitHub</span></div>
+      </div>
+    </div>
     <div class="skills-rows r">
       <div class="sk-row">
         <div class="sk-cat">Languages</div>
@@ -585,9 +692,18 @@ footer{
       <div class="cred-list">
         <div class="cred-row">
           <div>
-            <div class="cred-name">AWS Certified Solutions Architect &mdash; Associate</div>
-            <div class="cred-sub">Amazon Web Services &nbsp;&middot;&nbsp; Verified credential</div>
-            <a href="https://www.credly.com/badges/398e15b7-2fd7-426a-8d1d-d57f735a3fe1/public_url" target="_blank" class="cred-lnk">View on Credly &rarr;</a>
+            <div class="aws-badge-wrap">
+              <a href="https://www.credly.com/badges/398e15b7-2fd7-426a-8d1d-d57f735a3fe1/public_url" target="_blank" title="View on Credly">
+                <img src="https://images.credly.com/size/340x340/images/0e284c3f-5164-4b21-8660-0d84737941bc/image.png"
+                     alt="AWS Certified Solutions Architect Associate Badge"
+                     class="aws-badge-img" />
+              </a>
+              <div class="aws-badge-text">
+                <div class="cred-name">AWS Certified Solutions Architect &mdash; Associate</div>
+                <div class="cred-sub">Amazon Web Services &nbsp;&middot;&nbsp; Verified credential</div>
+                <a href="https://www.credly.com/badges/398e15b7-2fd7-426a-8d1d-d57f735a3fe1/public_url" target="_blank" class="cred-lnk">View on Credly &rarr;</a>
+              </div>
+            </div>
           </div>
           <span class="badge bg">Certified</span>
         </div>
@@ -634,6 +750,7 @@ footer{
         <div class="crow"><span class="crow-l">Email</span><span class="crow-v"><a href="mailto:ajayp.tech.777@gmail.com">ajayp.tech.777@gmail.com</a></span></div>
         <div class="crow"><span class="crow-l">Phone</span><span class="crow-v"><a href="tel:+18328045171">+1 832-804-5171</a></span></div>
         <div class="crow"><span class="crow-l">LinkedIn</span><span class="crow-v"><a href="https://linkedin.com/in/ajayp7tech" target="_blank">linkedin.com/in/ajayp7tech</a></span></div>
+        <div class="crow"><span class="crow-l">GitHub</span><span class="crow-v"><a href="https://github.com/ajayp7tech" target="_blank">github.com/ajayp7tech</a></span></div>
         <div class="crow"><span class="crow-l">Location</span><span class="crow-v">Minneapolis, MN &mdash; open to remote</span></div>
       </div>
     </div>
@@ -642,7 +759,7 @@ footer{
 
 <footer>
   <span class="ft">Ajay Pingali</span>
-  <span class="ft-r">Backend Engineer &nbsp;&middot;&nbsp; AWS Cloud &nbsp;&middot;&nbsp; Minneapolis, MN &nbsp;&middot;&nbsp; 2025</span>
+  <span class="ft-r">Backend Engineer &nbsp;&middot;&nbsp; AWS Cloud &nbsp;&middot;&nbsp; <a href="https://github.com/ajayp7tech" target="_blank" style="color:var(--ink4);text-decoration:none;">github.com/ajayp7tech</a> &nbsp;&middot;&nbsp; 2025</span>
 </footer>
 
 <script>
